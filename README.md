@@ -1,15 +1,47 @@
-≈#Overview
-Repository for 3 task in 2 laboratory work
-#Usage
-Liza Senyuk 9a group
-#Building
-#Additional Notes
-task1 - https://github.com/LizzardXS/lab2-task1-gr9a-senyuk
-task2 - https://github.com/LizzardXS/tpmp-lab2-task2
-# tpmp-gr9a-lab2-task3-LizzardXS
-# tpmp-gr9a-lab2-task3-LizzardXS
-# tpmp-gr9a-lab2-task3-LizzardXS
-# tpmp-gr9a-lab2-task4-LizzardXS
-# tpmp-gr9a-lab2-task4-LizzardXS
-# tpmp-gr9a-lab2-task4-LizzardXS
-# tpmp-gr9a-lab2-task3-LizzardXS
+# Приложение для подготовки к экзамену по философии
+
+## Описание
+
+Это iOS-приложение, разработанное с использованием Swift и SwiftUI, предназначено для студентов, готовящихся к экзамену по философии. Приложение предоставляет два основных режима работы: просмотр списка экзаменационных вопросов с ответами и тестирование в случайном порядке без необходимости ввода ответа.
+
+## Функциональность
+
+- **Список вопросов** — раскрывающийся список, где каждый вопрос отображается как заголовок. При нажатии раскрывается текст ответа.
+- **Тест** — режим самопроверки: пользователь видит случайный вопрос, нажимает кнопку, чтобы отобразить ответ, и переходит к следующему вопросу.
+
+## Технологии
+
+- Swift
+- SwiftUI
+- NavigationView / NavigationLink
+- DisclosureGroup
+- State Management (`@State`)
+
+## Установка и запуск
+
+1. Открой проект в **Xcode 15** или более поздней версии.
+2. Убедись, что установлен симулятор или подключено устройство с **iOS 16 или выше**.
+3. Запусти приложение (`Cmd + R`).
+4. В главном меню выбери один из режимов:
+   - **Список вопросов**
+   - **Тест**
+
+## Структура проекта
+PhilosophyExamApp/
+├── Models/
+│   └── QA.swift                  // Структура данных вопрос-ответ
+├── Views/
+│   ├── ContentView.swift         // Главный экран с кнопками навигации
+│   ├── QuestionListView.swift    // Список вопросов с ответами
+│   └── TestView.swift            // Экран тестирования
+├── Resources/
+│   └── qaList.swift              // Массив всех экзаменационных вопросов и ответов
+├── PhilosophyExamAppApp.swift    // Точка входа в приложение
+
+## Пример вопроса
+
+```swift
+QA(
+    question: "Что такое философия?",
+    answer: "Философия — это учение о всеобщих принципах бытия и познания."
+)
