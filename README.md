@@ -34,12 +34,9 @@ PhilosophyExamApp/
 ├── Views/
 │   ├── ContentView.swift         // Главный экран с кнопками навигации
 │   ├── QuestionListView.swift    // Список вопросов с ответами
-│   └── TestView.swift            // Экран тестирования
-├── Resources/
-│   └── qaList.swift              // Массив всех экзаменационных вопросов и ответов
+│   └── TestView.swift            // Экран тестирования            
 ├── PhilosophyExamAppApp.swift    // Точка входа в приложение
 ```
-
 ## Пример вопроса
 
 ```swift
