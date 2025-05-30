@@ -27,6 +27,7 @@
    - **Тест**
 
 ## Структура проекта
+```
 PhilosophyExamApp/
 ├── Models/
 │   └── QA.swift                  // Структура данных вопрос-ответ
@@ -37,6 +38,7 @@ PhilosophyExamApp/
 ├── Resources/
 │   └── qaList.swift              // Массив всех экзаменационных вопросов и ответов
 ├── PhilosophyExamAppApp.swift    // Точка входа в приложение
+```
 
 ## Пример вопроса
 
